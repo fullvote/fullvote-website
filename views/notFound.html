@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {{> head_light }}
+        <meta name="FullVote Error Page" content="Not Found Page">
+        <meta name="description" content="Page-not-found page for FullVote">
+        <title>Page Not Found | FullVote</title>
+        <style>
+            body {
+                padding: 10px;
+                font-size: 20px;
+                color: #292c36;
+            }
+            a {
+                color: #335985; text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            h1 {
+                font-size: 4em;
+            }
+            p {
+                font-size: 1.5em;
+                width: 30%;
+                margin-left: 35%;
+            }
+            @media (max-width: 769px) {
+                body {
+                    font-size: 10px;
+                }
+                p {
+                    width: 100%;
+                    font-size: 2.5em;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Sorry, resource not found!</h1>
+        <p>We can't seem to find what you're looking for. <a href="/">Home</a></p>
+        {{> analytics }}
+    </body>
+
+</html>

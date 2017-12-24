@@ -1,0 +1,122 @@
+.Tooltip {
+    position: relative;
+}
+.Tooltip-content {
+    width: 300px;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 99999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .7s;
+    line-height: 1.2em;
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    border: 2px solid #335985;
+}
+.Tooltip:hover .Tooltip-content {
+    opacity: 1;
+}
+
+// TOP TOOLTIP
+.Tooltip--top .Tooltip-content {
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -150px;
+}
+.Tooltip--top .Tooltip-content::before,
+.Tooltip--top .Tooltip-content::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-style: solid;
+}
+.Tooltip--top .Tooltip-content::before {
+    margin-left: -12px;
+    border-width: 12px;
+    border-color: #335985 transparent transparent transparent;
+}
+.Tooltip--top .Tooltip-content::after {
+    margin-left: -9px;
+    border-width: 9px;
+    border-color: white transparent transparent transparent;
+}
+
+// BOTTOM TOOLTIP
+.Tooltip--bottom .Tooltip-content {
+    top: 100%;
+    left: 50%; 
+    margin-left: -150px;
+}
+.Tooltip--bottom .Tooltip-content::before,
+.Tooltip--bottom .Tooltip-content::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-style: solid;
+}
+.Tooltip--bottom .Tooltip-content::before {
+    margin-left: -12px;
+    border-width: 12px;
+    border-color: transparent transparent #335985 transparent;
+}
+.Tooltip--bottom .Tooltip-content::after {
+    margin-left: -9px;
+    border-width: 9px;
+    border-color: transparent transparent white transparent;
+}
+
+/*
+// LEFT TOOLTIP
+.Tooltip--left .Tooltip-content {
+    top: -5px;
+    right: 105%; 
+}
+.Tooltip--left .Tooltip-content::before,
+.Tooltip--left .Tooltip-content::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    border-style: solid;
+}
+.Tooltip--left .Tooltip-content::before {
+    margin-top: -12px;
+    border-width: 12px;
+    border-color: transparent #335985 transparent transparent;
+}
+.Tooltip--left .Tooltip-content::after {
+    margin-top: -9px;
+    border-width: 9px;
+    border-color: transparent white transparent transparent;
+}
+
+// RIGHT TOOLTIP
+.Tooltip--right .Tooltip-content {
+    top: -5px;
+    left: 105%; 
+}
+.Tooltip--right .Tooltip-content::before,
+.Tooltip--right .Tooltip-content::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    border-style: solid;
+}
+.Tooltip--right .Tooltip-content::before {
+    margin-top: -12px;
+    border-width: 12px;
+    border-color: transparent transparent transparent #335985;
+}
+.Tooltip--right .Tooltip-content::after {
+    margin-top: -9px;
+    border-width: 9px;
+    border-color: transparent transparent transparent white;
+}
+*/

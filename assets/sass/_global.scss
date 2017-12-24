@@ -1,0 +1,69 @@
+/* Text shadow for black text on colors:
+ * text-shadow: 0 1px 3px #fff;
+ * White on colors:
+ * text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ *
+ * Uppercase, 2.5px letterspacing for links
+ * Blue #3C6BE4
+ * Green #75bf43
+ */
+
+@import "variables";
+
+html,
+body {
+    min-height:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: $black;
+}
+@media (max-width: 576px) {
+    html,
+    body {
+        font-size: 12px;
+    }
+}
+@media (min-width: 2500px) {
+    html,
+    body {
+        font-size: 18px;
+    }
+}
+h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: $black;
+}
+a {
+    color: $old-blue;
+    // color: #333;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #0D0D0E;
+    color: $blue--dark;
+}
+
+
+.u-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 3000ms, opacity 3000ms;
+}
+.u-fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 3000ms;
+}
+.u-displayNone {
+    display: none;
+}
+.u-padTop60 {
+    padding-top: 60px;
+}
+select:focus {
+    outline-color: $grey;
+}

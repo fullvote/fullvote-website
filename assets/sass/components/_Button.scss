@@ -1,0 +1,23 @@
+.Button {
+    letter-spacing: 2.5px;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    text-transform: capitalize;
+    font-size: 1em;
+    // min-width: 250px;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 100%;
+    cursor: pointer;
+    color: $old-blue;
+    &:hover {
+      color: $old-blue;
+    }
+}
+.Button--thin {
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+.Button--clear {
+  padding-left: 20px;
+}

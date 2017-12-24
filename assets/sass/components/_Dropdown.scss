@@ -1,0 +1,71 @@
+.Dropdown {
+    position: relative;
+}
+
+input.Dropdown-toggle:active,
+input.Dropdown-toggle:focus,
+input.Dropdown-toggle:hover {
+    outline: 0;
+    color: rgb(13, 13, 14);
+}
+input.Dropdown-toggle {
+    // pointer-events: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+    /* necessary b/c input now */
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: none;
+    letter-spacing: 2.5px;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    /* end necessary */
+
+    text-align: center;
+}
+
+.Dropdown-toggle:hover + .Dropdown-content,
+.Dropdown-toggle:focus + .Dropdown-content,
+.Dropdown-toggle:active + .Dropdown-content,
+.Dropdown-content:hover {
+    display: block;
+}
+
+.Dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    pointer-events: auto;
+    transition-duration: 550ms;
+
+    /* bootstrap */
+    // top: 100%;
+    z-index: 1000;
+    float: left;
+    text-align: left;
+    background-clip: padding-box;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px;
+    padding: 8px 0px;
+    margin: 0;
+    list-style: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-image: initial;
+    border-radius: 4px;
+    /* end bootstrap */
+}
+.Dropdown-content--left {
+    left: 0;
+}
+.Dropdown-content--right {
+    right: 0;
+}

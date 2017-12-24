@@ -1,0 +1,12 @@
+.DS_Store
+*.swp
+*.swo
+node_modules/
+assets/
+scripts/
+rev-manifest.json
+npm-debug.log
+# Elastic Beanstalk Files
+.elasticbeanstalk/
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

@@ -1,0 +1,45 @@
+.HeaderSection {
+  height: 400px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  position: relative;
+  background-color: $blah5;
+  color: #3d4651;
+}
+.HeaderSection-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.HeaderSection-title {
+  font-size: 4em;
+  color: $blah2;
+  font-weight: 100;
+  letter-spacing: 6px;
+}
+.HeaderSection-slogan {
+  font-size: 2.5em;
+  width: 60%;
+  margin: auto;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.HeaderSection-subtle {
+  position: absolute;
+  line-height: 400px;
+  font-size: 400px;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  color: #eaebeb;
+  overflow: hidden;
+}
+.HeaderSection-action {
+  width: 60%;
+  margin: auto;
+}
+.HeaderSection-actionButton {
+  display: inline-block;
+}
+

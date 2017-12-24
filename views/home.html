@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {{> head }}
+        <meta name="FairVote" content="A voting algorithm for good">
+        <meta name="description" content="FairVote is a voting system">
+        <meta property="og:url" content="https://www.fairvote.org for good" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FairVote" />
+        <meta property="og:description" content="FairVote is a voting system for good" />
+        <meta property="og:image" content="https://www.fairvote.org{{#urlFor}}/assets/images/logo.jpg{{/urlFor}}" />
+        <title>FairVote</title>
+        <script type="application/ld+json">
+            {{> home.json-ld}}
+        </script>
+    </head>
+
+    <body class="js-fullvote">
+
+        {{> navbar }}
+
+        <div class="HeaderSection u-padTop60">
+          <div class="HeaderSection-subtle">FullVote</div>
+          <div class="HeaderSection-content">
+            <div class="HeaderSection-title">FullVote</div>
+            <div class="HeaderSection-slogan">A voting system enabling a full and meaningful expression of voters' wishes</div>
+            <div class="HeaderSection-action">
+              <div class="HeaderSection-actionButton">
+                <a class="Button btn btn-primary" href="/create">Create</a>
+              </div>
+              <div class="HeaderSection-actionButton">
+                <a class="Button Button--clear" href="/playground">Try It ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="Intro">
+            <div class="Intro-section">
+              <div class="Intro-sectionHeader">
+                Expressive
+              </div>
+              <div class="Intro-sectionCopy">
+                Voters list on their ballot any candidates for which they would want their vote cast, in preferential order. Given all ballots, if a voter's candidate can win, the vote is cast. Otherwise, the next candidate listed is used and the process starts again.
+              </div>
+            </div>
+            <div class="Intro-section">
+              <div class="Intro-sectionHeader">
+                Inheriently Unconflicted
+              </div>
+              <div class="Intro-sectionCopy">
+                An approach in which it is inherently impossible to "split the vote" or "waste your vote".
+              </div>
+            </div>
+            <div class="Intro-section">
+              <div class="Intro-sectionHeader">
+                Idealist and Pragmatic
+              </div>
+              <div class="Intro-sectionCopy">
+                This creats a system in which voters: may vote their conscience, may not have to just choose between the lesser of two evils, may be idealist and pragmatic.
+              </div>
+            </div>
+            <div class="Intro-section">
+              <div class="Intro-sectionHeader">
+                Non-Binary
+              </div>
+              <div class="Intro-sectionCopy">
+                This would spell the end of the two party monolopoly. Similiar candidates (or parties) are not punished. Voters may identify with parties and individuals outside of a binary party system. This also means parties could effectively carry more than one candidate through the process.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <hr>
+        </div>
+
+        <div class="container-fluid">
+          <div class="Example">
+            <div class="Example-copy">
+              <div class="Example-title">No more split votes</div>
+              <!--
+              <div class="Example-subtitle">Goodbye two party system</div>
+              <div class="Example-subtitle">Don't punish like candidates</div>
+              <div class="Example-subtitle">Support many good candidates through the process</div>
+              -->
+              <div class="Example-description">
+                Sam and Sara and best friends - and both would make a great class president. Zack is a punk.
+              </div>
+            </div>
+            <div class="Example-system">
+              <div class="Example-systemTitle">FullVote</div>
+              <div class="Example-ballots js-example1fullvote">
+                <textarea class="Example-ballot js-ballot">Sam&#10;Sara</textarea>
+                <textarea class="Example-ballot js-ballot">Sam&#10;Sara</textarea>
+                <textarea class="Example-ballot js-ballot">Sara&#10;Sam</textarea>
+                <textarea class="Example-ballot js-ballot">Sam&#10;Sara</textarea>
+                <textarea class="Example-ballot js-ballot">Sara&#10;Sam</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+              </div>
+              <div class="Example-outcome">
+                Winner is <span class="Example-outcomeName js-outcome1fullvote">Sam</span>
+              </div>
+            </div>
+            <div class="Example-system">
+              <div class="Example-systemTitle">Traditional</div>
+              <div class="Example-ballots js-example1tradition">
+                <textarea class="Example-ballot js-ballot">Sam</textarea>
+                <textarea class="Example-ballot js-ballot">Sam</textarea>
+                <textarea class="Example-ballot js-ballot">Sara</textarea>
+                <textarea class="Example-ballot js-ballot">Sam</textarea>
+                <textarea class="Example-ballot js-ballot">Sara</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+                <textarea class="Example-ballot js-ballot">Zack</textarea>
+              </div>
+              <div class="Example-outcome">
+                Winner is <span class="Example-outcomeName js-outcome1traditional">Zack</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="Example">
+            <div class="Example-copy">
+              <div class="Example-title">No more wasted votes</div>
+              <!--
+              <h2>Don't just vote the lesser of two evils</h2>
+              <h2>Write-in to your heart's desire</h2>
+              <h2>Vote your conscience</h2>
+              <h2>Idealist and Pragmatic</h2>
+              -->
+              <div class="Example-description">
+                Your family is planning its annual vacation. Your parents have never been to Spain but you know they'd love it! It seems unlikely you could get everyone on board, but don't want to miss the chance if others would.
+              </div>
+            </div>
+            <div class="Example-system">
+              <div class="Example-systemTitle">FullVote</div>
+              <div class="Example-ballots js-example1fullvote">
+                <textarea class="Example-ballot js-ballot">Spain&#10;Miami</textarea>
+                <textarea class="Example-ballot js-ballot">Miami</textarea>
+                <textarea class="Example-ballot js-ballot">Miami</textarea>
+                <textarea class="Example-ballot js-ballot">Spain&#10;Miami</textarea>
+                <textarea class="Example-ballot js-ballot">Erie</textarea>
+                <textarea class="Example-ballot js-ballot">Erie</textarea>
+                <textarea class="Example-ballot js-ballot">Erie</textarea>
+              </div>
+              <div class="Example-outcome">
+                Winner is <span class="Example-outcomeName js-outcome1fullvote">Miami</span>
+              </div>
+            </div>
+            <div class="Example-system">
+              <div class="Example-systemTitle">Traditional</div>
+              <div class="Example-ballots js-example1tradition">
+                <textarea class="Example-ballot js-ballot">Spain</textarea>
+                <textarea class="Example-ballot js-ballot">Miami</textarea>
+                <textarea class="Example-ballot js-ballot">Miami</textarea>
+                <textarea class="Example-ballot js-ballot">Spain</textarea>
+                <textarea class="Example-ballot js-ballot">Erie</textarea>
+                <textarea class="Example-ballot js-ballot">Erie</textarea>
+                <textarea class="Example-ballot js-ballot">Erie</textarea>
+              </div>
+              <div class="Example-outcome">
+                Winner is <span class="Example-outcomeName js-outcome1traditional">Erie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+                        
+        {{ > footer }}
+
+
+        <script src="{{#urlFor}}/assets/built/home.js{{/urlFor}}"></script>
+        {{> analytics }}
+    </body>
+
+</html>

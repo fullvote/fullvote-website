@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {{> head_light }}
+        <meta name="FullVote Error Page" content="Error Page">
+        <meta name="description" content="Error page for FullVote">
+        <title>Error | Fullvote</title>
+        <style>
+            body {
+                padding: 10px;
+                font-size: 20px;
+                color: #292c36;
+                text-align: center;
+            }
+            a {
+                color: #335985; text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            h1 {
+                font-size: 4em;
+                color: #fcfff3;
+                text-shadow: 1px 1px 10px #2c170c;
+            }
+            a {
+                display: block;
+                font-size: 1.5em;
+                width: 30%;
+                margin-left: 60%;
+            }
+            p {
+                font-size: 1.5em;
+                width: 30%;
+                margin-left: 60%;
+                color: #fcfff3;
+                text-shadow: 1px 1px 10px #2c170c;
+            }
+            @media (max-width: 769px) {
+                body {
+                    font-size: 10px;
+                }
+                a {
+                    width: 100%;
+                    margin: 0;
+                    font-size: 2.5em;
+                }
+                p {
+                    width: 100%;
+                    font-size: 2.5em;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Well, this is embarrassing...</h1>
+        <p>An unexpected error has occured. We've been notified and will take care of it; check back soon!</p>
+        <a href="javascript:try{window.history.back()}catch(e){window.location.href='/';}">Go back</a>
+        <p>If it seems persistent, please post an issue on <a href="https://github.com/fullvote/fullvote-website/issues">Github</a></p>
+        {{> analytics }}
+    </body>
+
+</html>

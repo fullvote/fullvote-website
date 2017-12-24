@@ -1,0 +1,140 @@
+/* todo: anytime I'm clearing something in mobile width, only apply it to desktop width instead */
+/* todo: remove .Navbar path prefixes, messing up specificity */
+.Navbar {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 60px;
+    padding: 15px 20px;
+    background-color: $blah3;
+    text-transform: capitalize;
+
+}
+.Navbar .Navbar-brand {
+    font-family: "Helvetica Neue", sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.Navbar .Navbar-brand-image {
+    height: 18px;
+}
+.Navbar .Navbar-brandImage {
+    vertical-align: middle;
+    font-size: 2em;
+    &:hover {
+        text-shadow: none;
+    }
+}
+.Navbar .Navbar-prominent {
+    position: absolute;
+    right: 0;
+    line-height: 60px;
+    top: 0;
+    background-color: $blah-prominent;
+    margin: 0;
+    padding-right: 25px;
+    padding-left: 35px;
+    letter-spacing: 2.5px;
+}
+.Navbar .Navbar-items {
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+}
+.Navbar .Navbar-item {
+    letter-spacing: 2.5px;
+    display: inline-block;
+    // font-size: 1.1em; // temporary
+    font-size: 14px;
+}
+.Navbar .Navbar-item:hover {
+    text-decoration: none;
+}
+.Navbar .Navbar-item a:hover {
+    color: $blue--dark;
+    font-weight: 400;
+}
+.Navbar .Navbar-itemContent {
+    letter-spacing: 1.5px;
+    width: 220px;
+}
+
+@media (max-width: 1200px) {
+    .Navbar .Navbar-brand {
+        width: 240px;
+    }
+    .Navbar .Navbar-brand-tagline {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    // .Navbar--mobile {
+    //     display: none;
+    // }
+    .Navbar .Navbar-item {
+        margin-left: 12px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    // .Navbar--desktop {
+    //     display: none;
+    // }
+    .Navbar {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .Navbar .Navbar-items {
+        float: none;
+        display: inline-block;
+        margin-right: 0;
+    }
+    .Navbar-item {
+        display: inline-block;
+        text-align: center;
+    }
+    .Navbar-itemInput {
+        width: 110px;
+    }
+    .Navbar-itemInput--left {
+        text-align: right;
+        margin-right: 20px;
+    }
+    .Navbar-itemInput--right {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .Navbar .Navbar-brand {
+        display: inline;
+        text-align: center;
+        width: auto;
+    }
+    .Navbar-brand-image {
+        height: 24px;
+    }
+    .Navbar-brand {
+        text-align: center;
+    }
+    .Navbar-brand-image {
+        height: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body .Navbar .u-hidden-sm-down {
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    body .Navbar .u-hidden-md-up {
+        display: none;
+    }
+}

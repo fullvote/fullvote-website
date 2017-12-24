@@ -1,0 +1,71 @@
+.mdl-textfield__label:after {
+    bottom: 12px;
+    background-color: $inputs;
+}
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+    color: $inputs !important;
+    font-weight: 400;
+}
+.mdl-textfield__label {
+    text-align: center;
+    font-weight: 100;
+    color: $grey--darker;
+    letter-spacing: 1px;
+}
+.mdl-textfield__input {
+    font-family: inherit;
+    text-align: center;
+    border-color: #999;
+}
+.mdl-textfield {
+    width: 100%;
+}
+.mdl-textfield--floating-label .mdl-textfield__label,
+.mdl-textfield__label:after {
+    transition-duration: .5s;
+}
+.mdl-textfield__label:after {
+    left: 50%;
+}
+
+.btn-secondary {
+    padding-top: 10px;
+    border-width: 1px;
+    border-color: $grey--darker !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    -webkit-transition: none;
+    transition: none;
+}
+.btn-secondary:hover:not(.active) {
+    border-width: 2px;
+    border-color: #9dafc4 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    padding-bottom: 5px;
+    padding-top: 9px;
+    padding-right: 14px;
+}
+.btn-secondary:hover {
+    -webkit-transition: none;
+    transition: none;
+}
+.btn-secondary:hover:not(:first-child):not(.active) {
+    padding-left: 15px;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.open>.btn-secondary.dropdown-toggle {
+    border-width: 2px;
+    border-color: $inputs !important;
+    background: transparent;
+    background-color: transparent;
+    padding-bottom: 5px;
+    padding-top: 9px;
+}
+.btn-group>.btn:not(:first-child):not(.active):hover {
+/* .btn-group > .btn-secondary + .btn.secondary:hover { */
+    border-left-width: 0 !important;
+}
